@@ -1,4 +1,5 @@
 :root{
+    --hero_button:#CD3D10;
     --dark_color:#363636;
     --light_dark:#BEBCBB;
     --ps_blue:#00439C;
@@ -39,6 +40,7 @@ header{
     font-size: 0.7em;
     color: #565656;
 }
+
 .navbar-light .navbar-nav .nav-link{
     color: black;
 }
@@ -47,9 +49,30 @@ header{
     border-radius: 30px;
     margin:0 5px;
 }
- 
-
                     /* jumbo  */
+.hero#jumbo{
+    width: 100%;
+    margin-top: 90px;
+    background-image: url(../img/jumbo-bg.png);
+    height:calc(100vh - 90px);
+}
+.navbar{
+    padding: 0;
+}
+.hero{
+    background-size:cover;
+    background-position: center;
+    background-attachment: ;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+.my_button#hero-button{
+    background-color: var(--hero_button);
+    color: white;
+    margin-bottom: 20px;
+}
+
 
                     /*cards in vetrina */
 
@@ -68,3 +91,6 @@ header{
                     /*hero playstation now */
 
                     /*sezione social  */
+
+
+
