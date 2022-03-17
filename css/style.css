@@ -72,9 +72,14 @@ header{
     color: white;
     margin-bottom: 20px;
 }
-
-
                     /*cards in vetrina */
+.my_card{
+    margin: 20px 0;
+}
+.my_card img{
+    border-radius: 20px;
+}
+
 
                     /*sezione playstation 5 */
 
