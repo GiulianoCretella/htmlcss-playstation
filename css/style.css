@@ -1,5 +1,8 @@
 :root{
-    
+    --dark_color:#363636;
+    --light_dark:#BEBCBB;
+    --ps_blue:#00439C;
+    --ps_darkblue:#161C3B;
 }
 *{
     margin: 0;
@@ -9,3 +12,59 @@
 .debug{
     border: 1px solid black;
 }
+                    /* header  */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* nav sopra  */
+.up_nav{
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px 15px;
+}
+.logo-container{
+    width: 70px;
+}
+/* nav bootstrap */
+.dropdown-toggle::after{
+    display: none;
+}
+.nav-item a .fa{
+    font-size: 0.7em;
+    color: #565656;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+.my_button{
+    background-color: var(--dark_color);
+    border-radius: 30px;
+    margin:0 5px;
+}
+ 
+
+                    /* jumbo  */
+
+                    /*cards in vetrina */
+
+                    /*sezione playstation 5 */
+
+                    /*hero gioco */
+
+                    /*cards nuove uscite */
+
+                    /*sezione playstation 4 */
+
+                    /*hero playstation plus  */
+
+                    /*sezione playstation store */
+
+                    /*hero playstation now */
+
+                    /*sezione social  */
