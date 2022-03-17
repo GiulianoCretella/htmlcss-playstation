@@ -4,6 +4,9 @@
     --light_dark:#BEBCBB;
     --ps_blue:#00439C;
     --ps_darkblue:#161C3B;
+    --title_weight:400;
+    --title_size:30px;
+    --p_size:18px;
 }
 *{
     margin: 0;
@@ -79,9 +82,23 @@ header{
 .my_card img{
     border-radius: 20px;
 }
-
-
                     /*sezione playstation 5 */
+.consolle{
+    margin-top:30px;
+}
+.consolle h1{
+    font-size: var(--title_size);
+    font-weight: var(--title_weight);
+}
+.consolle p{
+    color: #565656;
+    margin-top: 10px;
+    font-size: var(--p_size);
+}
+.my_button#console-button{
+    background-color: #2D64E6;
+}
+
 
                     /*hero gioco */
 
