@@ -47,6 +47,9 @@ header{
 .navbar-light .navbar-nav .nav-link{
     color: black;
 }
+.navbar{
+    padding: 0;
+}
 .my_button{
     background-color: var(--dark_color);
     border-radius: 30px;
@@ -59,16 +62,16 @@ header{
     background-image: url(../img/jumbo-bg.png);
     height:calc(100vh - 90px);
 }
-.navbar{
-    padding: 0;
-}
 .hero{
     background-size:cover;
     background-position: center;
-    background-attachment: ;
     color: white;
     display: flex;
     align-items: flex-end;
+}
+.hero_text h1{
+    font-size:var(--title_size) ;
+    font-weight: var(--title_weight);
 }
 .my_button#hero-button{
     background-color: var(--hero_button);
@@ -108,22 +111,58 @@ header{
 .console-card-row p{
     font-size: 12px;
 }
-
-
-
                     /*hero gioco */
-
+.hero#game{
+    margin-top: 20px;
+    width: 100%;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    padding: 2% 0;
+}
                     /*cards nuove uscite */
-
+.my_card#new-release{
+    background-color: var(--dark_color);
+    color: white;
+}
+.my_card p{
+    font-size: var(--p_size);
+    margin-top: 5px;
+}
                     /*sezione playstation 4 */
-
+.console#playstation-4 .container .row .div{
+    margin: 10px 0;
+}
                     /*hero playstation plus  */
-
+.hero#playstation-plus{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--light_dark);
+}
+#playstation-plus .container .row .my_button#hero-button{
+    background-color: rgb(217, 218, 220);
+    color: var(--ps_blue);
+}
+#playstation-plus .container .row .hero_text p{
+    color: black;
+    font-size: var(--p_size);
+    padding: 10px 0;
+}
                     /*sezione playstation store */
+.hero#playstation-now{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--ps_darkblue);
+}
+#playstation-now .container .row .hero_text p{
+    padding: 20px 0;
+}
+#playstation-now .container .row .my_button#hero-button{
+    background-color: white;
+    color: black;
+}
 
                     /*hero playstation now */
 
-                    /*sezione social  */
+                    /*sezione social  */ 
 
 
 
@@ -133,5 +172,15 @@ header{
     }
     .console-card-row div{
         padding-bottom: 10px;
+    }
+    #playstation-plus .container .row .hero_text{
+        color: black;
+        font-size: var(--p_size);
+    }
+    #image-psplus{
+       display: none;
+    }
+    .console img{
+        margin-top: 30px;
     }
 }
