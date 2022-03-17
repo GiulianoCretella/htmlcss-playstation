@@ -2,10 +2,10 @@
     --hero_button:#CD3D10;
     --dark_color:#363636;
     --light_dark:#BEBCBB;
-    --ps_blue:#00439C;
+    --ps_blue:#0077D1;
     --ps_darkblue:#161C3B;
     --title_weight:400;
-    --title_size:30px;
+    --title_size:35px;
     --p_size:18px;
 }
 *{
@@ -83,14 +83,14 @@ header{
     border-radius: 20px;
 }
                     /*sezione playstation 5 */
-.consolle{
+.console{
     margin-top:30px;
 }
-.consolle h1{
+.console h1{
     font-size: var(--title_size);
     font-weight: var(--title_weight);
 }
-.consolle p{
+.console p{
     color: #565656;
     margin-top: 10px;
     font-size: var(--p_size);
@@ -98,6 +98,17 @@ header{
 .my_button#console-button{
     background-color: #2D64E6;
 }
+.console-card-row div{
+    border-bottom:2px solid white;
+}
+.console-card-row div:hover{
+    border-bottom:2px solid var(--ps_blue);
+    cursor: pointer;
+}
+.console-card-row p{
+    font-size: 12px;
+}
+
 
 
                     /*hero gioco */
@@ -116,3 +127,11 @@ header{
 
 
 
+@media screen and (max-width:767px) {
+    .console-card-row p{
+        display: none;
+    }
+    .console-card-row div{
+        padding-bottom: 10px;
+    }
+}
