@@ -139,11 +139,11 @@ header{
     position: relative;
     transition: all 1s ease;
 }
-.my_card .transparent-card:hover img{
+.my_card#featured .transparent-card:hover img{
     border: 2px solid var(--ps_blue);
     box-shadow: 3px 2px 3px #56565688;
 }
-.my-card .transparent-card:hover{
+.my_card .transparent-card:hover{
     transform: scale(1.1);
 }
 .transparent-card .transparent{
