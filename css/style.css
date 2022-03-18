@@ -22,6 +22,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 /* nav sopra  */
 .up_nav{
@@ -53,7 +54,7 @@ header{
 .my_button{
     background-color: var(--dark_color);
     border-radius: 30px;
-    margin:0 5px;
+    margin:10px 5px;
 }
 .show i.fa-chevron-down{
     transform: rotate(180deg);
@@ -75,17 +76,29 @@ header{
 .nav_li_dropdown_items{
     color: var(--ps_blue);
     list-style-type: disc;
+    font-size:var(--p_size);
+    cursor: pointer;
 }
 .my_dropdown_ul .my_button{
     background-color: white;
     color: black;
     font-size: var(--p_size);
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 .my_dropdown_ul .my_button:hover{
-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.327);
-border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.327);
+    border-radius: 3px;
+    color: var(--ps_blue);
+    cursor: pointer;
 }
+.my_dropdown_ul .my_button p:hover{
+    transform: scale(1.2);
+    font-weight: var(--title_weight);
+    cursor: pointer;
+}
+
+
                     /* jumbo  */
 .hero#jumbo{
     width: 100%;
@@ -111,11 +124,34 @@ border-radius: 3px;
 }
                     /*cards in vetrina */
 .my_card{
-    margin: 20px 0;
+    margin: 10px 0;
+    
 }
 .my_card img{
     border-radius: 20px;
 }
+.my_card .container .row .transparent-card{
+    position: relative;
+    transition: all 1s ease;
+}
+.my_card .container .row .transparent-card:hover img{
+    border: 2px solid var(--ps_blue);
+}
+.my_card .container .row .transparent-card:hover{
+    transform: scale(1.1);
+}
+.my_card .container .row .transparent-card .transparent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff6e;
+    opacity:1
+}
+.my_card .container .row .transparent-card .transparent:hover{
+   opacity:0}
+
                     /*sezione playstation 5 */
 .console{
     margin-top:30px;
