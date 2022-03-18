@@ -55,6 +55,37 @@ header{
     border-radius: 30px;
     margin:0 5px;
 }
+.show i.fa-chevron-down{
+    transform: rotate(180deg);
+}
+.my_dropdown_container{
+    position:relative;
+}
+.my_dropdown_li{
+    position:static;
+}
+.my_dropdown_ul{
+    border: none;
+}
+.my_dropdown_ul[data-bs-popper]{
+    margin-top: 0;
+    border-radius: 0;
+    width: 100%;
+}
+.nav_li_dropdown_items{
+    color: var(--ps_blue);
+    list-style-type: disc;
+}
+.my_dropdown_ul .my_button{
+    background-color: white;
+    color: black;
+    font-size: var(--p_size);
+    transition: all 0.5s ease;
+}
+.my_dropdown_ul .my_button:hover{
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.327);
+border-radius: 3px;
+}
                     /* jumbo  */
 .hero#jumbo{
     width: 100%;
