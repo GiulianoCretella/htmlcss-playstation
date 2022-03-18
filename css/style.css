@@ -44,9 +44,14 @@ header{
     font-size: 0.7em;
     color: #565656;
 }
-
 .navbar-light .navbar-nav .nav-link{
     color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--ps_blue);
+}
+.navbar-light .navbar-nav .nav-link:hover .fa{
+    color: var(--ps_blue);
 }
 .navbar{
     padding: 0;
@@ -130,17 +135,18 @@ header{
 .my_card img{
     border-radius: 20px;
 }
-.my_card .container .row .transparent-card{
+ .transparent-card{
     position: relative;
     transition: all 1s ease;
 }
-.my_card .container .row .transparent-card:hover img{
+.my_card .transparent-card:hover img{
     border: 2px solid var(--ps_blue);
+    box-shadow: 3px 2px 3px #56565688;
 }
-.my_card .container .row .transparent-card:hover{
+.my-card .transparent-card:hover{
     transform: scale(1.1);
 }
-.my_card .container .row .transparent-card .transparent{
+.transparent-card .transparent{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -149,7 +155,7 @@ header{
     background-color: #ffffff6e;
     opacity:1
 }
-.my_card .container .row .transparent-card .transparent:hover{
+.transparent-card .transparent:hover{
    opacity:0}
 
                     /*sezione playstation 5 */
