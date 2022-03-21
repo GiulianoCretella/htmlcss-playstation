@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --hero_button:rgb(205, 61, 16);
+    --dark_color:#363636;
+    --light_dark:#BEBCBB;
+    --ps_blue:#0077D1;
+    --ps_darkblue:#161C3B;
+    --title_weight:400;
+    --title_size:35px;
+    --p_size:16px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+                              /* header */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}           
+                      /* nav  */
+.up_nav{
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px 15px;
+}
+.logo-container{
+    width: 70px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.nav-item a .fa{
+    font-size: 0.7em;
+    color: #565656;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-size: var(--p_size);
+    font-weight: var(--title_weight);
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--ps_blue);
+}
+.navbar-light .navbar-nav .nav-link:hover .fa{
+    color: var(--ps_blue);
+}
+.navbar{
+    padding: 0;
+}
+.my_button{
+    background-color: var(--dark_color);
+    border-radius: 30px;
+    margin:10px 5px;
+}
+.my_button:focus, .my_button:active:focus{
+    border:2px solid white;
+    box-shadow: 0 0 0 0.25rem rgba(8, 7, 7, 0.5);
+}
+.my_button:focus-visible{
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+li a.show i.fa-chevron-down{
+    transform: rotate(180deg);
+}
+.my_dropdown_container{
+    position:relative;
+}
+.my_dropdown_li{
+    position:static;
+}
+.my_dropdown_ul{
+    border: none;
+}
+.my_dropdown_ul[data-bs-popper]{
+    margin-top: 0;
+    border-radius: 0;
+    width: 100%;
+}
+.nav_li_dropdown_items{
+    color: var(--ps_blue);
+    list-style-type: disc;
+    font-size:var(--p_size);
+    cursor: pointer;
+}
+.my_dropdown_ul .my_button{
+    background-color: white;
+    color: black;
+    font-size: var(--p_size);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.my_dropdown_ul .my_button:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.327);
+    border-radius: 3px;
+    color: var(--ps_blue);
+    cursor: pointer;
+}
+.my_dropdown_ul .my_button p:hover{
+    transform: scale(1.2);
+    font-weight: var(--title_weight);
+    cursor: pointer;
+}
+
+main a:first-child{
+    text-decoration: none;
+}
+                        /* game-nav  */
+
+.game-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.game-nav .navbar-brand img{
+    max-width: 200px;
+}
+#game_nav_button{
+    background-color: var(--hero_button);
+    border: 2px solid var(--hero_button);
+}
+button#game_nav_button:focus, button#game_nav_button:active:focus, #hero-button:focus, #hero-button:active:focus{
+    border:2px solid white;
+    box-shadow: 0 0 0 0.25rem rgb(251 61 61 / 50%);
+}
+button#game-nav-button:focus-visible, #hero-button:focus, #hero-button:active:focus{
+    box-shadow: 0 0 0 0.25rem rgb(251 61 61 / 50%);
+}
+.my_navbar-nav a{
+    padding:0 10px;
+    font-weight: var(--title_weight);
+}
+.my_navbar-nav a:hover{
+    color: black !important;
+    background-color: #ECEEF0;
+    border-radius: 25px;
+    font-size: var(--p_size);
+}
+                       /* jumbo  */
+.hero#jumbo{
+    width: 100%;
+    margin-top: 90px;
+    background-image: url(https://64.media.tumblr.com/4e2c1caaffd3e23d2c96b951a559ad95/41a30695d2f9cf38-87/s540x810/32e742eda80baca3298e2524d2c2a302c18a7046.gifv);
+    height:calc(100vh - 90px);
+}
+.hero{
+    background-size:cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+button#hero-button{
+    background-color: var(--hero_button);
+    color: white;
+    margin-bottom: 20px;
+    padding:5px 40px;
+}
+button#hero:focus, button#game_nav_button:active:focus{
+    border:2px solid white;
+    box-shadow: 0 0 0 0.25rem rgb(251 61 61 / 50%);
+}
+button#hero:focus-visible{
+    box-shadow: 0 0 0 0.25rem rgb(251 61 61 / 50%);
+}
+.hero_text h1{
+    font-size:50px;
+}
+.hero_text p{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+                         /* footer  */
+footer{
+    width: 100%;
+    background-color: var(--ps_blue);
+    color: white;
+    font-size: 10px;
+    padding: 5% 0;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+#sie-logo{
+    width:150px;
+    transition: all 1s linear ;
+}
+footer p{
+    margin-top: 10px;
+}
+footer p a{
+    color: white;
+}
+#sie-logo-box{
+    margin-top: 10%;
+}
+
+
+@media screen and (max-width:991px) {
+    .my_navbar-nav{
+        display: none;
+    }
+}
